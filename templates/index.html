@@ -39,7 +39,7 @@
                 <h3 class="mb-0">Jakarta</h3>
                 <div class="mb-1 text-body-secondary">Gwak mang st. 587</div>
                 <p class="card-text mb-auto">Ayo bergabunglah dengan pusat kebugaran paling unik di dunia!</p>
-                <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                <a href="{{ url_for('choose_gym', city='Jakarta') }}" class="icon-link gap-1 icon-link-hover stretched-link">
                     Check it out
                     <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
                 </a>
@@ -57,7 +57,7 @@
                 <h3 class="mb-0">Islamabad</h3>
                 <div class="mb-1 text-body-secondary">Arham Ayaad sq</div>
                 <p class="mb-auto">آؤ اور دنیا کے سب سے منفرد جم میں شامل ہوں!</p>
-                <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                <a href="{{ url_for('choose_gym', city='Islamabad') }}" class="icon-link gap-1 icon-link-hover stretched-link">
                     Check it ou
                     <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
                 </a>
@@ -75,7 +75,7 @@
           <h3 class="mb-0">Miami, Fl</h3>
           <div class="mb-1 text-body-secondary">Freedom Eagle st. 145</div>
           <p class="card-text mb-auto">Come and join the most unique gym in the world!</p>
-          <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+          <a href="{{ url_for('choose_gym', city='Miami, Fl') }}" class="icon-link gap-1 icon-link-hover stretched-link">
             Check it out
             <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
           </a>
@@ -94,7 +94,7 @@
           <h3 class="mb-0">Horsens</h3>
           <div class="mb-1 text-body-secondary">Jensen Boulevard 12</div>
           <p class="card-text mb-auto">Kom og deltag i det mest unikke fitnesscenter i verden!</p>
-          <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+          <a href="{{ url_for('choose_gym', city='Horsens') }}" class="icon-link gap-1 icon-link-hover stretched-link">
             Check it out
             <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
           </a>
@@ -190,11 +190,11 @@
   <div class="container col-xxl-12 bg-body-secondary px-4 py-5">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-10 col-sm-8 col-lg-6">
-        <img src="https://th.bing.com/th/id/OIP.tXIkBInxPSJ73fMvaZQFTQAAAA?rs=1&pid=ImgDetMain" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="400" height="250" loading="lazy">
+        <img src="https://filmdaily.co/wp-content/uploads/2020/07/karenhaircut-01-1300x1284.jpg" class="logo d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="400" height="250" loading="lazy">
       </div>
       <div class="col-lg-6">
         <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Karen</h1>
-        <p class="lead">Despite my sky-high standards, I have no complaints about Hrochgym at all, I don't even have a clue how the manager at this place looks like!</p>
+        <p class="lead">Despite my sky-high standards, I have no complaints about Hrochogym at all, I don't even have a clue how the manager at this place looks like!</p>
       </div>
     </div>
   </div>
@@ -207,25 +207,26 @@
         <p class="lead">I started working out here 3 years ago and I made huge progress with the Hrochgym's nutrition program! I gained 40kgs of lean muscle since joining the gym here in Miami.</p>
       </div>
       <div class="col-10 col-sm-8 col-lg-6">
-        <img src="https://th.bing.com/th/id/R.65c7174255e33a741f29d5f33b03af42?rik=jM43m%2bh%2fmj5cfg&riu=http%3a%2f%2f2.bp.blogspot.com%2f-5YDmFGATC4Y%2fTlYgx7SGJzI%2fAAAAAAAAINY%2fYl0LxfOBjuU%2fs1600%2fRonnie%2bColeman%2b%25252837%252529.jpg&ehk=s4iQ8No3cdVHOYJCjvpHxRl01ZYKnuAoVMxNjpjSopo%3d&risl=&pid=ImgRaw&r=0" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="400" height="250" loading="lazy">
+        <img src="https://th.bing.com/th/id/R.65c7174255e33a741f29d5f33b03af42?rik=jM43m%2bh%2fmj5cfg&riu=http%3a%2f%2f2.bp.blogspot.com%2f-5YDmFGATC4Y%2fTlYgx7SGJzI%2fAAAAAAAAINY%2fYl0LxfOBjuU%2fs1600%2fRonnie%2bColeman%2b%25252837%252529.jpg&ehk=s4iQ8No3cdVHOYJCjvpHxRl01ZYKnuAoVMxNjpjSopo%3d&risl=&pid=ImgRaw&r=0" class="d-block mx-lg-auto img-fluid logo" alt="Bootstrap Themes" width="400" height="250" loading="lazy">
+      </div>
+    </div>
+  </div>
+        <div class="b-example-divider"></div>
+
+          <div class="container col-xxl-12 bg-body-secondary px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="https://i.kym-cdn.com/photos/images/original/000/870/119/dcb.jpg" class="d-block mx-lg-auto img-fluid logo" alt="Bootstrap Themes" width="400" height="250" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Jeff</h1>
+        <p class="lead">Everyone here tolerates my insufferableness as crossfit is my whole personality. The patience and nerves of the staff here is unparalleled.</p>
       </div>
     </div>
   </div>
 
-<!--        <div class="modal modal-sheet position-static d-block bg-body-secondary p-4 py-md-5" tabindex="-1" role="dialog" id="modalChoice">-->
-<!--  <div class="modal-dialog" role="document">-->
-<!--    <div class="modal-content rounded-3 shadow">-->
-<!--      <div class="modal-body p-4 text-center">-->
-<!--        <h5 class="mb-0">Enable this setting?</h5>-->
-<!--        <p class="mb-0">You can always change your mind in your account settings.</p>-->
-<!--      </div>-->
-<!--      <div class="modal-footer flex-nowrap p-0">-->
-<!--        <button type="button" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 py-3 m-0 rounded-0 border-end"><strong>Yes, enable</strong></button>-->
-<!--        <button type="button" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 py-3 m-0 rounded-0" data-bs-dismiss="modal">No thanks</button>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</div>-->
+
+
 
 
 {% include 'footer.html' %}
