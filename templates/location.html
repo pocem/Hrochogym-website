@@ -2,143 +2,217 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{{title}}</title>
+    <title>{{ title }}</title>
     {% include 'base.html' %}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
 
 </head>
 <body>
 {% include 'header.html' %}
 
- <div class="container mt-5">
-        <div class="row">
-            <div class="col-md-8 p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
-                <h1 class="display-4 ">Hrochogym {{ city }}</h1>
-                <p class="lead my-3">Choose a gym in this attractive location.</p>
-            </div>
-            <div class="col-md-4">
-                <div class="image-container" style="background-image: url('{{ image_url }}'); height: 100%;"></div>
-            </div>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8 p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
+            <h1 class="display-4">Hrochogym {{ city }}</h1>
+            <p class="lead my-3">Choose a gym in this attractive location.</p>
+        </div>
+        <div class="col-md-4">
+            <div class="image-container" style="background-image: url('{{ image_url }}'); height: 100%;"></div>
         </div>
     </div>
+</div>
 
 <div class="bg-secondary">
-  <h1 class="display-4 text-center mt-5 mb-5">Choose your membership</h1>
+    <h1 class="display-4 text-center mt-5 mb-5">Choose your membership</h1>
 
-<main>
-    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center container mx-auto">
-      <div class="col">
+    <main>
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center container mx-auto">
+    <div class="col">
         <div class="card mb-4 rounded-3 shadow-sm">
-          <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">Free</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$0<small class="text-body-secondary fw-light">/mo</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>10 users included</li>
-              <li>2 GB of storage</li>
-              <li>Email support</li>
-              <li>Help center access</li>
-            </ul>
-            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
-          </div>
+            <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Basic Deal</h4>
+            </div>
+            <div class="card-body">
+                <h1 class="card-title pricing-card-title">$25<small class="text-body-secondary fw-light">/mo</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                    <li>Access to gym facilities</li>
+                    <li>Group fitness classes</li>
+                    <li>Locker room access</li>
+                    <li>Free Wi-Fi</li>
+                </ul>
+                <a href="#signup" class="w-100 btn btn-lg btn-light">Sign up</a>
+            </div>
         </div>
-      </div>
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm">
-          <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">Pro</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$15<small class="text-body-secondary fw-light">/mo</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>20 users included</li>
-              <li>10 GB of storage</li>
-              <li>Priority email support</li>
-              <li>Help center access</li>
-            </ul>
-            <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm border-primary">
-          <div class="card-header py-3 text-bg-primary border-primary">
-            <h4 class="my-0 fw-normal">Enterprise</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$29<small class="text-body-secondary fw-light">/mo</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>30 users included</li>
-              <li>15 GB of storage</li>
-              <li>Phone and email support</li>
-              <li>Help center access</li>
-            </ul>
-            <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
-          </div>
-        </div>
-      </div>
     </div>
+    <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Happy Membership</h4>
+            </div>
+            <div class="card-body">
+                <h1 class="card-title pricing-card-title">$40<small class="text-body-secondary fw-light">/mo</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                    <li>All Basic Deal features</li>
+                    <li>Personal training sessions</li>
+                    <li>Sauna access</li>
+                    <li>Free guest passes</li>
+                </ul>
+                <a href="#signup" class="w-100 btn btn-lg btn-primary">Get started</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+            <div class="card-header py-3 text-bg-primary border-primary">
+                <h4 class="my-0 fw-normal">Full Package</h4>
+            </div>
+            <div class="card-body">
+                <h1 class="card-title pricing-card-title">$59<small class="text-body-secondary fw-light">/mo</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                    <li>All Happy Membership features</li>
+                    <li>24/7 gym access</li>
+                    <li>Unlimited personal training</li>
+                    <li>Nutrition counseling</li>
+                </ul>
+                <a href="#signup" class="w-100 btn btn-lg btn-primary">Contact us</a>
+            </div>
+        </div>
+    </div>
+</div>
 
-    <h2 class="display-5 text-center mb-4">Compare plans</h2>
+<h2 class="display-5 text-center mb-4">Compare plans</h2>
 
-    <div class="table-responsive col-8 mx-auto">
-      <table class="table text-center">
+<div class="table-responsive col-8 mx-auto">
+    <table class="table text-center">
         <thead>
-          <tr>
-            <th style="width: 34%;"></th>
-            <th style="width: 22%;">Free</th>
-            <th style="width: 22%;">Pro</th>
-            <th style="width: 22%;">Enterprise</th>
-          </tr>
+            <tr>
+                <th style="width: 34%;"></th>
+                <th style="width: 22%;">Basic Deal</th>
+                <th style="width: 22%;">Happy Membership</th>
+                <th style="width: 22%;">Full Package</th>
+            </tr>
         </thead>
         <tbody>
-          <tr>
-            <th scope="row" class="text-start">Public</th>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
-          </tr>
-          <tr>
-            <th scope="row" class="text-start">Private</th>
-            <td></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
-          </tr>
+            <tr>
+                <th scope="row" class="text-start">Access to gym facilities</th>
+                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg>✓</td>
+                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg>✓</td>
+                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg>✓</td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-start">Group fitness classes</th>
+                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg>✓</td>
+                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg>✓</td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-start">Personal training sessions</th>
+                <td></td>
+                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg>✓</td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-start">Sauna access</th>
+                <td></td>
+                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg>✓</td>
+                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg>✓</td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-start">24/7 gym access</th>
+                <td></td>
+                <td></td>
+                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg>✓</td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-start">Unlimited personal training</th>
+                <td></td>
+                <td></td>
+                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg>✓</td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-start">Nutrition counseling</th>
+                <td></td>
+                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg>✓</td>
+            </tr>
         </tbody>
+    </table>
+</div>
 
-        <tbody>
-          <tr>
-            <th scope="row" class="text-start">Permissions</th>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
-          </tr>
-          <tr>
-            <th scope="row" class="text-start">Sharing</th>
-            <td></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
-          </tr>
-          <tr>
-            <th scope="row" class="text-start">Unlimited members</th>
-            <td></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
-          </tr>
-          <tr>
-            <th scope="row" class="text-start">Extra security</th>
-            <td></td>
-            <td></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </main>
-  </div>
+    </main>
+</div>
+
+<div class="container mt-5" id="signup">
+    <h2>Sign Up</h2>
+    <form method="POST" >
+        {{ form.hidden_tag() }}
+        <div class="mb-3">
+            {{ form.name.label(class="form-label") }}
+            {{ form.name(class="form-control") }}
+            {% if form.name.errors %}
+                <div class="text-danger">
+                    {{ form.name.errors[0] }}
+                </div>
+            {% endif %}
+        </div>
+        <div class="mb-3">
+            {{ form.surname.label(class="form-label") }}
+            {{ form.surname(class="form-control") }}
+            {% if form.surname.errors %}
+                <div class="text-danger">
+                    {{ form.surname.errors[0] }}
+                </div>
+            {% endif %}
+        </div>
+        <div class="mb-3">
+            {{ form.email.label(class="form-label") }}
+            {{ form.email(class="form-control") }}
+            {% if form.email.errors %}
+                <div class="text-danger">
+                    {{ form.email.errors[0] }}
+                </div>
+            {% endif %}
+        </div>
+        <div class="mb-3">
+            {{ form.password.label(class="form-label") }}
+            {{ form.password(class="form-control") }}
+            {% if form.password.errors %}
+                <div class="text-danger">
+                    {{ form.password.errors[0] }}
+                </div>
+            {% endif %}
+        </div>
+        <div class="mb-3">
+            {{ form.age.label(class="form-label") }}
+            {{ form.age(class="form-control") }}
+            {% if form.age.errors %}
+                <div class="text-danger">
+                    {{ form.age.errors[0] }}
+                </div>
+            {% endif %}
+        </div>
+        <div class="mb-3">
+    {{ form.gender.label(class="form-label") }}
+    {% for subfield in form.gender %}
+        <div class="form-check">
+            {{ subfield(class="form-check-input") }}
+            {{ subfield.label(class="form-check-label") }}
+        </div>
+    {% endfor %}
+    {% if form.gender.errors %}
+        <div class="text-danger">
+            {{ form.gender.errors[0] }}
+        </div>
+    {% endif %}
+</div>
+
+        <div class="mb-3">
+            {{ form.submit(class="btn btn-primary") }}
+        </div>
+    </form>
+</div>
 
 {% include 'footer.html' %}
-
 
 </body>
 </html>
